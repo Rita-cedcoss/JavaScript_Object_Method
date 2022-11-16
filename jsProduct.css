@@ -1,0 +1,61 @@
+#outer{
+    height: auto;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 53px;
+}
+#inpID{
+    margin-left: 10%;
+    height: 35px;
+    width: 60%;
+    margin-bottom: 5%;
+}
+#inpName{
+    margin-left: 6%;
+    height: 35px;
+    width: 60%;
+    margin-bottom: 5%;
+}
+#prodPrice{
+    margin-left: 7%;
+    height: 35px;
+    width: 60%;
+    margin-bottom: 5%;
+}
+#prodQuant{
+    margin-left: 3%;
+    height: 35px;
+    width: 60%;
+    margin-bottom: 5%;
+}
+#btnAdd{
+    height: 60px;
+    font-size: 18px;
+    width: 40%;
+    background: none;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin:50px auto;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+  .btnQuantity
+  {
+    font-size: 25px;
+    margin: 10px;
+    border: none;
+    background: none;
+  }
+  
