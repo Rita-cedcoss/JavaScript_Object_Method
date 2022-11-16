@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+        <h1>Task1</h1>
+        <span>Position</span>
+        <select id="selectPosition">
+            <option>Cashier</option><option>Manager</option>
+        </select>
+        <span>Type</span>
+        <select id="selectType">
+            <option>Hourly</option><option>Monthly</option><option>Daily</option>
+        </select>
+        <span>Is Available</span>
+        <select id="selectAvailable">
+            <option>True</option><option>False</option>
+        </select>
+        <button onclick=" submit()">Submit</button>
+        <p id="objectCreate"> </p>
+        <h1>Task2: Print all the keys of object</h1>
+        <button onclick="showDetails()">Show keys </button>
+        <p id="keys"> </p>
+        <h1>Task3: Print value of all the keys of object</h1>
+        <button onclick="showValue()">Show Value</button>
+        <p id="values"> </p>
+        <h1>Task4:Print all the key values as an individual array, nested in an array</h1>
+        <button onclick="NestedArray()">NestedArray</button>
+        <p id="nestedArray"> </p>
+        <h1>Task5: Prevent the Employee object from updation</h1>
+        <button onclick="freez()">Freez Data</button>
+        <h1>Task6: Create one more object for food items and merge with above created object to get a new object and print it.</h1>
+        <button onclick="mergeArray()">Merge Array</button>
+    </div>
+</body>
+<script src="objectMethod.js"></script>
+</html>
