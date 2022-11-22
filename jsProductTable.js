@@ -1,14 +1,18 @@
 let productArr=[]
-
 function addProduct(){
     let Id=document.getElementById("inpID").value;
     let Name=document.getElementById("inpName").value;
     let Price=document.getElementById("prodPrice").value;
     let Quantity=document.getElementById("prodQuant").value;
     let obj={prodId:Id,prodName:Name,prodPrice:Price,prodQuantity:Quantity}
+    if(Id==""&&Name==""&&Price==""&&Quantity=="")
+    {
+      alert("please Fill all the Field");
+    }else{
     productArr.push(obj);
     console.log(productArr)
     populate();
+}
 }
 function populate()
 {
@@ -17,7 +21,7 @@ function populate()
     text="<table><tr><th>Product Id</th><th>Product Name</th><th>Product Price</th><th>Product Quantity</th><th>Action</th></tr>"
     productArr.map((item,i)=>{
         return(
-            text+="<tr><td>"+item.prodId+"</td><td>"+item.prodName+"</td><td>"+item.prodPrice+"</td><td><button class='btnQuantity' ind="+i+" onclick='decrement(this)'>-</button><span >"+item.prodQuantity+"</span><button class='btnQuantity' ind="+i+" onclick='increment(this)'>+</button></td><td><button ind="+i+" onclick=deleteData(this)>Delete</button></td></tr>"
+            text+="<tr><td>"+item.prodId+"</td><td>"+item.prodName+"</td><td>"+item.prodPrice+"</td><td><button class='btnQuantity' ind="+i+" onclick='decrement(this)'>-</button><span >"+item.prodQuantity+"</span><button class='btnQuantity' ind="+i+" onclick='increment(this)'>+</button></td><td><button class='btnDelete' ind="+i+" onclick=deleteData(this)>Delete</button></td></tr>"
         )
     })
     document.getElementById("tblData").innerHTML=text
